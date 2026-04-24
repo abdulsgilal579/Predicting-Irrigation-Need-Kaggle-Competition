@@ -36,4 +36,15 @@ for col in categorical_cols:
     test[col]  = le.transform(test[col])        # only convert, never re-learn
 
 print("\nEncoding done!")
+
+# ── Prepare Features and Target ────────────────────────────
+
+X_train = train.drop(['id', 'Irrigation_Need', 'Irrigation_Need_encoded'], axis=1)
+X_test  = test.drop(['id'], axis=1)
+y_train = train['Irrigation_Need_encoded']
+
+print(f"X_train shape: {X_train.shape}")
+print(f"X_test shape:  {X_test.shape}")
+print(f"y_train shape: {y_train.shape}")
+
 print(train.head())

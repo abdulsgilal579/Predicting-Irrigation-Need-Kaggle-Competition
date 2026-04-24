@@ -1,0 +1,43 @@
+# Data files
+Dataset/
+*.csv
+*.zip
+*.json
+*.parquet
+*.feather
+*.h5
+*.pkl
+*.pickle
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+env/
+.venv/
+
+# Models (can be large)
+models/
+*.model
+*.bin
+*.pt
+*.pth
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs & outputs
+logs/
+*.log
+submissions/

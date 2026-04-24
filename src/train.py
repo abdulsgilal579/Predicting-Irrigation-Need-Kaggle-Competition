@@ -10,7 +10,7 @@ test = pd.read_csv("../Dataset/test.csv")
 # print(f"Train DTypes: {train.dtypes}")
 
 # print(f"Train Irrigation Need Value Counts: {train['Irrigation_Need'].value_counts()}")
-# print(f"Train Irrigation Need Value Countes Normalize: {train['Irrigation_Need'].value_counts(normalize=True)}")
+# print(f"Train Irrigation Need Value Counts Normalized: {train['Irrigation_Need'].value_counts(normalize=True)}")
 
 # print(train.isnull().sum().sort_values(ascending=False))
 categorical_cols = ['Soil_Type', 'Crop_Type', 'Crop_Growth_Stage',

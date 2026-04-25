@@ -8,7 +8,7 @@ test  = pd.read_csv("../Dataset/test.csv")
 
 print(f"Train Shape: {train.shape}")
 print(f"Test Shape:  {test.shape}")
-print(f"Train DTypes:\n{train.dtypes}")
+print(f"Train DTypes:\n{train.dtypes}") 
 
 # ── Target Distribution ────────────────────────────────────
 print(f"\nValue Counts:\n{train['Irrigation_Need'].value_counts()}")
@@ -48,3 +48,4 @@ print(f"X_test shape:  {X_test.shape}")
 print(f"y_train shape: {y_train.shape}")
 
 print(train.head())
+
